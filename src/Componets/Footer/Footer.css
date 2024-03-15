@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact {}
+
+.footer-police {}
+
+.footer-adress {}
+
+.footer-icon {}
