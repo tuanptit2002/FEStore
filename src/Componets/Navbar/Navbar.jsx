@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import logo from '../Assests/logo.png'
-import icon1 from '../Assests/icon1.svg'
-import iconCart from '../Assests/cart.svg'
 import './Navbar.css'
 import image from '../Assests/image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
