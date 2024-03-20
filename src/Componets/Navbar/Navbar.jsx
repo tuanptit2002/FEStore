@@ -3,6 +3,7 @@ import './Navbar.css'
 import image from '../Assests/image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
 const Navbar = () => {
 
     const [menu, setMenu] = useState("gioithieu")
@@ -18,10 +19,10 @@ const Navbar = () => {
                 <div>
                     <ul id="navbar">
                         <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a> <Link to={'/shop'}>Shop</Link></a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><Link to={'/about'}>About</Link></li>
+                        <li><Link to={'/contract'}>Contract</Link></li>
                         <li id="lg-bag">
                             <a href="cart.html">
                                 <FontAwesomeIcon icon={faShoppingCart} />
