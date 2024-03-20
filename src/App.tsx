@@ -5,8 +5,9 @@ import './App.css';
 
 
 import Navbar from "./Componets/Navbar/Navbar";
+import Footer from './Componets/footer/Footer';
 
-import About from "./Pages/About/About";
+// import About from "./Pages/About/About";
 
 
 
@@ -15,9 +16,8 @@ function App() {
   return (
     <div >
       <Navbar />
-      <About />
-
-    </div >
+      <Footer></Footer>
+    </div>
   );
 }
 
