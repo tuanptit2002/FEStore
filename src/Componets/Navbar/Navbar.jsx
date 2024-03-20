@@ -1,39 +1,42 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import logo from '../Assests/logo.png'
 import icon1 from '../Assests/icon1.svg'
-import iconCart from'../Assests/cart.svg'
+import iconCart from '../Assests/cart.svg'
 import './Navbar.css'
-const Navbar = () =>{
+import image from '../Assests/image.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+const Navbar = () => {
 
     const [menu, setMenu] = useState("gioithieu")
-    return(
+    return (
         <div className={'navbar'}>
-            <div className="border-nav">
-            <div className="nav-logo">
-                <img src={logo} alt=""/>
-            </div>
-            <div className="nav-search">
-                   <input type="text" placeholder="Tìm kiếm..."/>
-            </div>
-                <div className="icon">
-                <div className="icon1">
-                    <img src={icon1} alt="" width={20}/>
-                </div>
-                <div className="iconCart">
-                    <img src={iconCart} alt="" width={20}/>
-                </div>
-                    <div className="cart-count">0</div>
-                </div>
-            </div>
-            <ul className="nav-menu">
-                <li  onClick={() =>{setMenu("gioithieu")}}>Giới thiệu{menu === 'gioithieu'? <hr/>:<></>}</li>
-                <li  onClick={() =>{setMenu("sanpham")}}>Sản phẩm {menu === 'sanpham'? <hr/>:<></>}</li>
-                <li  onClick={() =>{setMenu("khuyenmai")}}>Khuyến mại {menu === 'khuyenmai'? <hr/>:<></>}</li>
-                <li  onClick={() =>{setMenu("tintuc")}}>Tin tức {menu === 'tintuc'? <hr/>:<></>}</li>
-                <li  onClick={() =>{setMenu("tuyendung")}}>Tuyển dụng {menu === 'tuyendung'? <hr/>:<></>}</li>
-                <li  onClick={() =>{setMenu("hethong")}}>Hệ thống của hàng {menu === 'hethong'? <hr/>:<></>}</li>
-            </ul>
 
+
+            <section id="header">
+                <a href="#">
+                    <img src={image} class="logo" alt="" />
+                </a>
+
+                <div>
+                    <ul id="navbar">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li id="lg-bag">
+                            <a href="cart.html">
+                                <FontAwesomeIcon icon={faShoppingCart} />
+                            </a>
+                        </li>                        <a href="#" id="close"><i class="fa fa-times"></i></a>
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <i id="bar" class="fa-solid fa-outdent"></i>
+                </div>
+            </section>
         </div>
     )
 }

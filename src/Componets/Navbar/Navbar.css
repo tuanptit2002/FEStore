@@ -1,92 +1,95 @@
-.navbar{
+#header {
     display: flex;
-    justify-content: space-around;
-    background: white;
-    width: 100vw;
-    height: 200px;
-    flex-direction: column;
-}
-.icon{
-    display: flex;
-    padding: 5px;
-    align-items: center;
-}
-.border-nav {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px; /* Thêm padding để tạo khoảng cách giữa các phần tử */
-    border-bottom: 1px solid #E6D7D7;
-}
-
-.nav-logo {
-    border: 1px solid #000000;
-    height: 80px;
-    width: 110px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.nav-search {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid #F5F5F5;
-    width: calc(80% - 10px); /* Đặt chiều rộng tự động sao cho ô tìm kiếm không bị chồng lên logo */
-    height: 50px;
-    margin: 2px 5px 3px;
-    display: flex; /* Thêm thuộc tính display để ô tìm kiếm có thể căn giữa dọc */
-    align-items: center; /* Căn nội dung của ô tìm kiếm theo chiều dọc */
-}
-
-.nav-search input {
-    border: none; /* Loại bỏ viền */
-    outline: none; /* Loại bỏ đường viền focus */
-    width: 100%;
-    height: 100%;
-    background: #F5F5F5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
-    padding: 5px; /* Thêm padding cho input */
-}
-
-.nav-menu{
-    display: flex;
-    position: relative;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    flex-direction: row;
-    align-self: center;
-    width: 1000px;
-    box-sizing: border-box;
-}
-.nav-menu li{
-    list-style: none;
-}
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: red;
-}
-.icon1{
-    margin-right:20px;
     align-items: center;
-}
-.iconCart{
-    margin-right:20px;
-    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6F3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-.cart-count{
-    width: 20px;
-    height: 20px;
+#navbar {
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
     align-items: center;
-    margin-top: -30px;
-    margin-left: -30px;
-    border-radius: 11px;
-    font-size: 11px;
-    background: red;
-    color: white;
+}
+
+#close {
+    display: none;
+}
+
+/* hero.css */
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
 }
