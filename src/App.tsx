@@ -5,7 +5,7 @@ import './App.css';
 
 
 import Navbar from "./Componets/Navbar/Navbar";
-import Footer from './Componets/footer/Footer';
+import Footer from './Componets/Footer/Footer';
 
 // import About from "./Pages/About/About";
 
