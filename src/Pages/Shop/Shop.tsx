@@ -1,6 +1,7 @@
 import './Shop.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
 const Shop = () => {
     return (
         <>
@@ -12,6 +13,7 @@ const Shop = () => {
             <section id="product1" className="section-p1">
                 <div className="pro-container">
                     <div className="pro" >
+                        <Link to={'/product/1'}>
                         <img src="img/products/f1.jpg" alt="" />
                         <div className="des">
                             <span>adidas</span>
@@ -26,6 +28,7 @@ const Shop = () => {
                             <h4>$78</h4>
                         </div>
                         <a href="#"><i className="fa fa-shopping-cart cart"></i></a>
+                        </Link>
                     </div>
                     <div className="pro" >
                         <img src="img/products/f2.jpg" alt="" />
