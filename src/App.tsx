@@ -23,22 +23,12 @@ function App() {
           <Route path={'/contract'} element={<Contract />} />
           <Route path={'/home'} element={<Homepage />} />
           <Route path={'/shop'} element={<Shop></Shop>} />
+            <Route path={'/about'} element={<About />} />
+            <Route path={'/contract'} element={<Contract />} />
+            <Route path={'/cart'} element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path={'/about'} element={<About />} />
-          <Route path={'/contract'} element={<Contract />} />
-          <Route path={'/cart'} element={<Cart />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-
-
-
     </div>
   );
 }
