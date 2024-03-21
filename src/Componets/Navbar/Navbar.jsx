@@ -24,8 +24,10 @@ const Navbar = () => {
                         <li><Link to={'/about'}>About</Link></li>
                         <li><Link to={'/contract'}>Contract</Link></li>
                         <li id="lg-bag">
-                            <a href="cart.html">
+                            <a >
+                                <Link to={'/cart'}>
                                 <FontAwesomeIcon icon={faShoppingCart} />
+                                </Link>
                             </a>
                         </li>                        <a href="#" id="close"><i class="fa fa-times"></i></a>
                     </ul>
