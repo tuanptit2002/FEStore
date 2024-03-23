@@ -20,13 +20,13 @@ const Navbar = () => {
                     <ul id="navbar">
                         <li><Link to={'/'}>Home</Link></li>
                         <li><a> <Link to={'/shop'}>Shop</Link></a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a> <Link to={'/blog'}>Blog</Link></a></li>
                         <li><Link to={'/about'}>About</Link></li>
                         <li><Link to={'/contract'}>Contract</Link></li>
                         <li id="lg-bag">
                             <a >
                                 <Link to={'/cart'}>
-                                <FontAwesomeIcon icon={faShoppingCart} />
+                                    <FontAwesomeIcon icon={faShoppingCart} />
                                 </Link>
                             </a>
                         </li>                        <a href="#" id="close"><i class="fa fa-times"></i></a>
