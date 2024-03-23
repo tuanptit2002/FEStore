@@ -10,7 +10,11 @@ import Homepage from './Pages/Homepage/Homepage';
 import Shop from './Pages/Shop/Shop';
 
 import Cart from "./Pages/Cart/Cart";
+
 import Blog from './Pages/Blog/Blog';
+
+import Product from "./Pages/Product/Product";
+
 
 
 function App() {
@@ -20,28 +24,22 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+
           <Route path={'/about'} element={<About />} />
           <Route path={'/contract'} element={<Contract />} />
-          <Route path={'/home'} element={<Homepage />} />
+          <Route path={'/'} element={<Homepage />} />
           <Route path={'/shop'} element={<Shop></Shop>} />
           <Route path={'/blog'} element={<Blog></Blog>} />
 
-        </Routes>
-        <Footer />
-      </BrowserRouter>
 
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
           <Route path={'/about'} element={<About />} />
           <Route path={'/contract'} element={<Contract />} />
           <Route path={'/cart'} element={<Cart />} />
+          <Route path={'/product/:id'} element={<Product />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
-
-
-
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Arrival = () => {
     return (
         <>
@@ -6,6 +8,7 @@ const Arrival = () => {
                 <p>Summer Collection New Modern Design</p>
                 <div className="pro-container">
                     <div className="pro">
+                        <Link to={'/product/1'}>
                         <img src="img/products/n1.jpg" alt="" />
                         <div className="des">
                             <span>adidas</span>
@@ -20,6 +23,7 @@ const Arrival = () => {
                             <h4>$78</h4>
                         </div>
                         <a href="#"><i className="fa fa-shopping-cart cart"></i></a>
+                        </Link>
                     </div>
                     <div className="pro">
                         <img src="img/products/n2.jpg" alt="" />
