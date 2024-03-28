@@ -14,6 +14,8 @@ import Cart from "./Pages/Cart/Cart";
 import Blog from './Pages/Blog/Blog';
 
 import Product from "./Pages/Product/Product";
+import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Login/Signup";
 
 
 
@@ -36,7 +38,8 @@ function App() {
           <Route path={'/contract'} element={<Contract />} />
           <Route path={'/cart'} element={<Cart />} />
           <Route path={'/product/:id'} element={<Product />} />
-
+          <Route path={'/login'} element={<Login/>}/>
+          <Route path={'/sign-up'} element={<Signup/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

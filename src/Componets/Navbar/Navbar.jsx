@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, {useContext, useState} from "react";
 import './Navbar.css'
 import image from '../Assests/image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import {AuthContext} from "../../Context/AuthContext";
 const Navbar = () => {
-
+    const { isLoggedIn } = useContext(AuthContext);
     const [menu, setMenu] = useState("gioithieu")
     return (
         <div className={'navbar'}>
@@ -23,6 +24,7 @@ const Navbar = () => {
                         <li><a> <Link to={'/blog'}>Blog</Link></a></li>
                         <li><Link to={'/about'}>About</Link></li>
                         <li><Link to={'/contract'}>Contract</Link></li>
+                        {!isLoggedIn && <li><Link to={'/login'}>Login</Link></li>}
                         <li id="lg-bag">
                             <a >
                                 <Link to={'/cart'}>
